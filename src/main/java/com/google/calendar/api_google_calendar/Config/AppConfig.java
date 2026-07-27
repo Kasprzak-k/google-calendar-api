@@ -13,4 +13,4 @@ public class AppConfig {
                 .defaultHeader("Authorization", "Bearer " + apiKey)
                 .build();
     }
-+}
+}
