@@ -6,11 +6,9 @@ import org.springframework.web.client.RestClient;
 
 @Configuration
 public class AppConfig {
+
     @Bean
     public RestClient restClient() {
-        return RestClient.builder()
-                .baseUrl("https://www.googleapis.com/calendar/v3")
-                .defaultHeader("Authorization", "Bearer " + apiKey)
-                .build();
+        return RestClient.create();
     }
 }
